@@ -1,0 +1,61 @@
+.lightTheme {
+  --bodyBg: linear-gradient(to right top, #f8a336, #e57c3c, #c95940, #a73b42, #81233e);
+  --bG: url('../img/lightTheme.png');
+  --bgPosition: 50% 20%;
+  --searchBar: rgba(34, 34, 34, 0.529);
+  --fontColor: #222;
+  --invertedFont: #fff6af;
+}
+
+.darkTheme {
+  --bodyBg: linear-gradient(to right top, #766a64, #5b544e, #423e39, #2b2a27, #161615);
+  --bG: url('../img/darkHeader.jpg');
+  --bgPosition: 50% 50%;
+  --searchBar: #d2cca19e;
+  --fontColor:#D2CCA1;
+  --invertedFont: #222;
+}
+
+body{
+  background-image: var(--bodyBg); 
+  color: var(--fontColor);
+}
+
+body *{
+  font-family: 'Shippori Antique', sans-serif;
+}
+
+button{
+  border: var(--invertedFont) solid 2px;
+}
+
+header{
+  background-size: cover;
+  background-image: var(--bG);
+  background-position: var(--bgPosition);
+  background-size: cover;
+}
+
+header button{color: var(--fontColor)}
+#noteListContainer button{color: var(--invertedFont)}
+
+input{
+  background-color: var(--searchBar);
+  color: var(--invertedFont);
+  border: var(--fontColor) solid 2px;
+  border-radius: 5px;
+  transition: all .5s;
+}
+
+input:hover{background-color: var(--fontColor)}
+input:focus{background-color: var(--fontColor)}
+
+#notes, #addNote{
+  background-color: var(--searchBar);
+  color: var(--invertedFont);
+  border: var(--fontColor) solid 2px;
+  border-radius: 5px;
+  transition: all .5s;
+}
+
+#noteList:hover, #addNote:hover{background-color: var(--fontColor);}

@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1%;
+  height: 100vh;
+  width: 100vw;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+}
+
+header button{transform: scale(1.5)}
+
+#title{font-weight: 900;  
+}
+
+textarea{
+  resize:none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+input{
+  height: 40%;
+  width: 70%;
+}
+
+button{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background:none;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all .5s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover{
+  cursor:pointer;
+  transform: scale(1.3)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#noteListContainer{
+  width: 95%;
+  height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y:auto;
+  gap: 2%;
+}
+
+.note{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1%;
+}
+
+.content{
+  height: 80%;
+}
+
+.noteFooter{
+  display: flex;
+  justify-content: space-between;
+}
+
+#addNote{
+  height: 30%;
+  width: 32%;
+  padding: .5%;
+}
+
+#notes{
+  height: 30%;
+  width: 32%;
+  word-wrap: break-word;
+  padding: .5%;
+}
+
+@media (max-width: 850px){
+
+  #noteListContainer{
+    gap: 10%;
   }
-  to {
-    transform: rotate(360deg);
+
+  #addNote{
+    width: 45%;
+  }
+
+  #noteList{
+    width: 45%;
   }
 }
+
+@media (max-width: 660px){
+
+  #noteListContainer{
+    justify-content: center;
+  }
+  
+  #addNote{
+    width: 90%;
+  }
+
+  #noteList{
+    width: 90%;
+  }
+}
+
+
+
