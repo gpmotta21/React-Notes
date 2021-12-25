@@ -16,9 +16,10 @@
   --invertedFont: #222;
 }
 
-body{
+body, html{
   background-image: var(--bodyBg); 
   color: var(--fontColor);
+  background-repeat: no-repeat;
 }
 
 body *{
@@ -34,9 +35,10 @@ header{
   background-image: var(--bG);
   background-position: var(--bgPosition);
   background-size: cover;
+  color: white;
 }
 
-header button{color: var(--fontColor)}
+header button{color: white}
 #noteListContainer button{color: var(--invertedFont)}
 
 input{

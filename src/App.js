@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h3 id="title">React Notes</h3>
+        <div id="title">React Notes</div>
         <SearchNote setSearch={setSearch} />
         <ChangeTheme />
       </header>

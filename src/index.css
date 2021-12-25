@@ -1,7 +1,13 @@
-
-html, body {
+body > div{
   height: 100%;
   width: 100%;
+}
+
+html {
+  min-height: 100%;
+}    
+body {
+   min-height: 100%;
 }
 body {
   display: flex;
