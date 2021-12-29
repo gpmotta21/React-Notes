@@ -4,7 +4,6 @@ import SearchNote from './components/SearchNote.jsx';
 import NoteList from './components/notelist.jsx';
 import ChangeTheme from './components/darkmode/Theme.jsx';
 import { nanoid } from 'nanoid';
-
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -34,14 +33,16 @@ function App() {
     setNotes(newNotes)
   }
 
+  const [height, setHeight] = useState('')
+
   return (
-    <div className="App">
+    <div className="App" style={{height: height}}>
       <header>
         <div id="title">React Notes</div>
-        <SearchNote setSearch={setSearch} />
+        <SearchNote setSearch={setSearch} setHeight={setHeight} />
         <ChangeTheme />
       </header>
-        <NoteList nList={writeNotes} del={deleteNote} ar={addNote} />
+        <NoteList setHeight={setHeight} nList={writeNotes} del={deleteNote} ar={addNote} />
     </div>
   );
 }
