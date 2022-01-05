@@ -1,4 +1,4 @@
-# **My first React project ->** [Click here to go to React Notes](http://localhost:3000/React-Notes)
+# **My first React project ->** [Click here to go to React Notes](https://gpmotta21.github.io/React-Notes/)
 
 > In this project, I created a version of a to-do list using React
 
@@ -21,5 +21,5 @@ Some of the features of this project are:
 
 <img src="src/components/img/mobile.png">
 
-[Link to the website](http://localhost:3000/React-Notes)
+[Link to the website](https://gpmotta21.github.io/React-Notes/)
 
